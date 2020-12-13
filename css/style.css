@@ -22,6 +22,7 @@ padding: 0px;
 margin: 0px;
 }
 
+
 /*Header*/
 
 .logo, 
@@ -30,7 +31,7 @@ font-family: Raleway;
 font-style: normal;
 font-weight: bold;
 font-size: 26px;
-line-height: 31px;   
+line-height: 1.19;   
 }
 
 .web {
@@ -43,11 +44,12 @@ color: #000000;
 
 .navigation-list-link,
 .header-adress {
+font-weight: 500;
 letter-spacing: 0.02em;
 }
 
 .navigation-list-link {
-color: #212121;
+color: #212121;;
 }
 
 .header-adress {
@@ -58,7 +60,7 @@ color: #757575;
 .navigation-list-link:focus,
 .header-adress:hover,
 .header-adress:focus {
-color: #2196F3;;
+color: #2196F3;
 }
 
 .container {
@@ -123,8 +125,14 @@ height: 16px;
 margin-right: 10px;
 }
 
-.header-adress-link:hover .header-adress-link-item-svg,
-.header-adress-link:focus .header-adress-link-item-svg {
+.header-adress-link:hover .header-adress-link-item-svg{
+color: #2196F3;
+fill: #2196F3;
+} 
+
+.header-adress:focus 
+{
+color: #2196F3;
 fill: #2196F3;
 }
 
@@ -155,6 +163,8 @@ url(../images/BGimg.jpg);
 background-repeat: no-repeat;
 background-position: center;
 background-size: 1600px, auto;
+background-size: cover;
+
 }
 
 .hero-title {
@@ -202,11 +212,17 @@ p{
 margin: 0px;
 padding: 0px;
 }
+.prioriti-section{
+padding-top: 94px;
+padding-bottom: 94px;
+}
+.activities-section{
+padding-bottom: 94px;
+}
 
 .prioriti-img-list{
 display: flex;
 justify-content: center;
-padding-top: 94px;
 margin-bottom: 27px;
 }
 .prioriti-img-cont{
@@ -244,7 +260,6 @@ margin-right: 30px;
 .activities-list{
 display: flex;
 justify-content: center;
-padding-bottom: 94px;
 }
 
 .activities-link:not(:last-child) {
@@ -268,7 +283,6 @@ line-height: 1.17;
 text-align: center;
 color: #212121;
 margin-bottom: 50px;
-padding-top: 94px;
 
 
 }
@@ -327,12 +341,13 @@ background-color: #2196F3;
 }
 .profession{
 background-color: #E5E5E5;
+padding-top: 94px;
+padding-bottom: 94px;
 
 }
 .profession-list{
 display: flex;
 justify-content: center;
-padding-bottom: 94px;
 }
 
 .profession-linl:not(:last-child){
@@ -340,8 +355,9 @@ margin-right: 30px;
 }
 
 .profession-linl{
-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px;
+    background: #FFFFFF;   
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 .profession-img {
 margin-bottom: 30px;
@@ -366,14 +382,16 @@ margin-bottom: 16px;
 }
 
 /*main Клиенты*/
-
+.client-section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .client-list{
 display: flex;
 justify-content: center;
 text-align:center;
-margin-bottom: 94px;
 }
-.client-link{
+.client-link-item{
 width: 170px;
 height: 90px;
 display: flex;
@@ -387,13 +405,15 @@ border-radius: 4px;
 fill: #AFB1B8;
 }
 
-.client-link:hover .client-item-svg,
-.client-link:focus .client-item-svg{
+.client-link-item:focus .client-item-svg,
+.client-link-item:hover .client-item-svg{
 fill:  #2196F3;
+
 }
-.client-link:hover,
+.client-link-item:hover,
 .client-link:focus{
 border: 1px solid #2196F3;
+border-radius: 4px;
 }
 
 .client-link:not(:last-child){
@@ -524,7 +544,10 @@ padding-top: 60px;
 }
 
 /*Portfolio*/
-
+.our-work-section{
+padding-top: 94px;
+padding-bottom: 50px;
+}
 .img{
 display: block;
 }
@@ -532,8 +555,6 @@ display: block;
 .our-work-list{
 display: flex;
 justify-content: center;
-padding-top: 94px;
-padding-bottom: 50px;
 }
 
 .our-work-link:not(:last-child){
@@ -559,10 +580,12 @@ background-color: #2196F3 ;
 color: #ffffff;
 }
 
+.all-work-section{
+padding-bottom: 94px;
+}
 .all-work-list{
 display: flex;
 flex-wrap: wrap;
-padding-bottom: 94px;
 }
 
 .all-work-link:not(:nth-child(3n+3)){
@@ -576,13 +599,17 @@ margin-bottom: 30px;}
 margin-bottom: 20px;
 }
 
-.all-work-link{
+.all-work-link-cont{
 border: 1px solid #EEEEEE;
 }
 
-.all-work-link:hover,
-.all-work-link:focus {
+.all-work-link-cont:hover,
+.all-work-link-cont:focus {
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.all-work-link-cont:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .all-work{
